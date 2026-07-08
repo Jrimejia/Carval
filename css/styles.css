@@ -168,3 +168,28 @@
       
 }
 
+
+.saludo{
+  font-size: 17px;
+  font-weight: 400;
+  color: #2e3a59;
+  margin-left: 10px;
+  opacity: 0.9;
+}
+
+.saludo-container{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.saludo{
+  font-size: 17px;
+  font-weight: 500;
+  color: #2e3a59;
+}
+
+.info{
+  font-size: 13px;
+  color: #6c757d;
+  margin-top: 3px;
+}
