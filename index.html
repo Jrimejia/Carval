@@ -31,8 +31,8 @@
   gap: 2rem;
 }
     .accordion {
-      flex: 1 1 240px;
-      max-width: 260px;
+      flex: 1 1 300px;
+      max-width: 320px;
     }
     .accordion-button {
       font-weight: 500;
@@ -50,16 +50,23 @@
   padding: 0.4rem 0.3rem;
   margin: 0.1rem 0;
 }
-    .list-group-item a {
-  background-color: #1f7c8b;
-  color: white;
-  font-weight: 500;
-  border-radius: 0.8rem;
-  padding: 0.3rem 1rem;
-  text-decoration: none;
-  font-size: 0.8rem;
-  transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  .list-group-item a {
+    background-color: #1f7c8b;
+    color: white;
+    font-weight: 500;
+    border-radius: 0.8rem;
+
+    padding: 0.5rem 1rem;
+
+    text-decoration: none;
+    font-size: 0.8rem;
+
+    transition: background-color 0.3s,
+                transform 0.2s;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    display: inline-block;
 }
     .list-group-item a:hover {
   background-color: #0f4f5c;
@@ -67,8 +74,8 @@
   text-decoration: none;
   color: #ffffff;
 }
-    @media screen and (max-width: 768px) {
-  @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) 
+  {
 
   #accordionGroup {
     display: flex;
@@ -93,20 +100,23 @@
   .accordion-body {
     padding: 0.75rem 0.75rem;
   }
+  
   .list-group-item {
     font-size: 0.9rem;
     padding: 0.4rem 0.75rem;
     margin: 0.2rem 0;
   }
+  
   .list-group-item a {
     font-size: 0.9rem;
     padding: 0.35rem 0.8rem;
     word-break: break-word;
     text-align: left;
-  }
-  footer {
+}
+  
+footer {
     padding: 2rem 1rem;
-  }
+}
   footer h5, footer p {
     font-size: 0.9rem;
   }
@@ -195,20 +205,15 @@
     opacity: 0;
     transform: translateX(-10px);
   }
-.list-group-item {
-  animation: fadeSlide 0.6s ease-in-out, pop 0.8s ease-in-out;
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-@keyframes pop {
-  0% {
-    transform: scale(0.95);
-  }
-  50% {
-    transform: scale(1.02);
-  }
-  100% {
-    transform: scale(1);
-  }
+.list-group-item {
+  animation: fadeSlide 0.6s ease-in-out, pop 0.8s ease-in-out;
 }
 
 
