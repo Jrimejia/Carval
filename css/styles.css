@@ -5,9 +5,9 @@
   padding: 0;
   margin: 0;
 }
-
 .showcase-area {
-    height: 38vh;
+    height: 25vh;
+    min-height: 180px;
 
     background: linear-gradient(
         rgba(240, 240, 240, 0.144),
