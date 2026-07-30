@@ -6,8 +6,7 @@
   margin: 0;
 }
 .showcase-area {
-    height: 25vh;
-    min-height: 180px;
+    height: 38vh;
 
     background: linear-gradient(
         rgba(240, 240, 240, 0.144),
@@ -192,4 +191,19 @@
   font-size: 13px;
   color: #6c757d;
   margin-top: 3px;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
